@@ -22,9 +22,9 @@ public class Receipt {
 
         System.out.println("Burger's & Fries Mart");
         System.out.println("1000 Salesian Lane");
-        System.out.println("\n" + name + "\n");
+        System.out.println(name);
 
-        System.out.println("Burger(s)         " + burger_cost);
+        System.out.println("\nBurger(s)         " + burger_cost);
         System.out.println("Hot Dog(s)        " + hot_dog_cost);
         System.out.println("Drink(s)          " + drinks_cost);
         System.out.println("Candy(s)          " + candies_cost);
