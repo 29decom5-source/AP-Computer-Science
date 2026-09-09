@@ -63,4 +63,23 @@ public class StringManipulation {
         Unnable to be changed. the String class is an example of this */
 
     }
+
+    public static void main2(){
+        String name ="Fine";
+        String first2Letters = name.substring(0,3);
+        int location = name.indexOf("e");
+        String str_new_1 = "eagle";
+        String str_new_2 = "bucs";
+        int compare_new_1 = str_new_2.compareTo(str_new_1); //returns a negative 1
+        boolean notTrue = str_new_1.equals(str_new_2);
+        System.out.println(first2Letters + ", " + location + ", " + compare_new_1 + ", " + notTrue);
+
+        double num_new_1 = Math.abs(-9); //answer is 9.0
+        int num_new_2 = Math.abs(9) //answer is 9
+        double exponent = Math.pow(2,5); //this would be 32.0
+        double exponent2 = Math.pow(5,2); //this would be 25.0
+        double sqrt = Math.sqrt(16); //this is 4.0
+
+        int randomNum_new_1 = (int) (Math.random() * 11);
+    }
 }
