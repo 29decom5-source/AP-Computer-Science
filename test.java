@@ -31,5 +31,6 @@ public class test{
        System.out.println(will);
 
        String substr = instance1.name.substring(0,3);
+       instance2.toString();
     }
 }
