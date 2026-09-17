@@ -19,7 +19,7 @@ public class Receipt_V2 {
 
     }
 
-    public void getTotal(){
+    public void calculateTotal(){
         double hd = this.hot_dogs * 2.5;
         double hb = this.hamburgers * 3.5;
         double sd = this.sodas * 1.5;
@@ -56,7 +56,7 @@ public class Receipt_V2 {
         int drink = sc.nextInt();
 
         Receipt_V2 W_Fine = new Receipt_V2(name_V1,hot_dog,burger,drink,candy);
-        W_Fine.getTotal();
+        W_Fine.calculateTotal();
         W_Fine.addTax(1.15);
         System.out.println(W_Fine);
     }
