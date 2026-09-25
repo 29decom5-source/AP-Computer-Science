@@ -16,10 +16,11 @@ public class email{
 
         int number_first = (int) (Math.random() * period);
         int number_Last_v = Last.length();
-        int number_Last = (int) (Math.random() * number_Last_v - 2);
+        int number_Last = (int) (Math.random() * number_Last_v -2); //Error has to due with the -2 accidently producing either a negative number or a number too high
+        System.out.println(number_Last_v);
+        System.out.println(number_Last);
 
         String user3_1 = First.substring(number_first,number_first+1);
-        //System.out.println("Helloooo");
         String user3_2 = Last.substring(number_Last,number_Last+3);
 
         System.out.println(user3_1 + "_" + user3_2);
