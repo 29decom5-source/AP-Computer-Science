@@ -1,9 +1,36 @@
+import java.util.Scanner;
+
 public class email{
     public void main()  {
-        String email = "william.fine@archbishopshaw.us";
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Hello, What is your email?");
+        String name_V1 = sc.nextLine();
+        while (name_V1.contains(".") == false);{
+            System.out.println("That is an invalid email \nPlease try again using the format first_name.Last_name@domain.com/org/net/etc");
+            name_V1 = sc.nextLine();
+        }
+        while (name_V1.contains("@") == false); {
+            System.out.println("That is an invalid email \nPlease try again using the format first_name.Last_name@domain.com/org/net/etc");
+            name_V1 = sc.nextLine();
+        }
+        String email = name_V1;
         int period = email.indexOf(".");
         int at = email.indexOf("@");
+        while (period > at); {
+        System.out.println("That is an invalid email \nPlease try again using the format first_name.Last_name@domain.com/org/net/etc");
+        name_V1 = sc.nextLine();
+        }
+
+        email = name_V1;
+        period = email.indexOf(".");
+        at = email.indexOf("@");
+
+        if (period < at) {}
+        else {
+            System.out.println("That is an invalid email \nPlease try again using the format first_name.Last_name@domain.com/org/net/etc");
+            name_V1 = sc.nextLine();
+        }
 
         String First = email.substring(0,period);
         String Last = email.substring(period+1,at);
