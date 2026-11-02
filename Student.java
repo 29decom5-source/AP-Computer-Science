@@ -11,14 +11,25 @@ public class Student{
     public Student(){
     }
 
-    public void displayName(){
-        System.out.println(name);
+    public String displayName(){
+        return name;
     }
-    public void displayid(){
-        System.out.println(ID);
+
+    public void setName(String name){
+        this.name = name;
     }
-    public void displaygpa(){
-        System.out.println(GPA);
+    public void setID(String identification){
+        ID = identification;
+    }
+    public void setGPA(double gradepointaverage){
+        GPA = gradepointaverage;
+    }
+
+    public String displayid(){
+        return ID;
+    }
+    public Double displaygpa(){
+        return GPA;
     }
 
 
