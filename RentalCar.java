@@ -1,11 +1,11 @@
 public class RentalCar{
-    private Double dailyrate;
+    private static Double dailyrate = 1200.00;
     private Double mileagerate;
     private Double maxamount;
     private int year;
 
     public RentalCar(Double daily, Double mileage, Double max, int yr){
-        dailyrate = daily;
+        //dailyrate = daily;
         mileagerate = mileage;
         maxamount = max;
         year = yr;
