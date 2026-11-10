@@ -27,4 +27,8 @@ public class CarCompany{
             System.out.println("Not Luxury");
         }
 }
+    public void showCarInfo(RentalCar c){
+                System.out.println(c.displayDaily() + c.displayMileage());
+                //System.out.println(c.dailyRate)-doesn't work because it is private
+            }
 
